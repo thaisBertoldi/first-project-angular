@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShopContentComponent implements OnInit {
 
+  quantityProducts: number = 200;
+
   constructor() { }
 
   ngOnInit(): void {
