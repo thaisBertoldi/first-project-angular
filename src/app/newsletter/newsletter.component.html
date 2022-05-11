@@ -11,8 +11,10 @@
               </div>
               <div class="newsletter_title">Sign up for Newsletter</div>
               <div class="newsletter_text">
-                <p>{{ textNewsletter }}</p>
-                <p>{{ email }}</p>
+                  <p *ngIf="isEmailSend; else notSendEmail">{{ email }}</p>
+                  <ng-template #notSendEmail>
+                      <p>{{ textNewsletter }}</p>
+                  </ng-template>
               </div>
             </div>
             <div class="newsletter_content clearfix">

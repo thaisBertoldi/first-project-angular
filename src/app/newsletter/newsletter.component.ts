@@ -10,6 +10,7 @@ export class NewsletterComponent implements OnInit {
 
   textNewsletter = 'Você pode receber os melhores descontos!';
   email = 'teste@teste.com.br';
+  isEmailSend = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -17,6 +18,7 @@ export class NewsletterComponent implements OnInit {
 
   onSubmitNewsletter(){
     this.textNewsletter = 'Email enviado.';
+    this.isEmailSend = true;
   }
 
   onEmailEnter(event: Event) {
