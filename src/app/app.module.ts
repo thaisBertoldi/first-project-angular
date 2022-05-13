@@ -19,6 +19,9 @@ import { SliderComponent } from './brands/slider/slider.component';
 import { NewsletterComponent } from './newsletter/newsletter.component';
 import { FooterComponent } from './footer/footer.component';
 import { CopyrightComponent } from './copyright/copyright.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductComponent } from './product/product.component';
+import { ProductItemComponent } from './product/product-item/product-item.component';
 
 @NgModule({
   declarations: [
@@ -37,12 +40,15 @@ import { CopyrightComponent } from './copyright/copyright.component';
     SliderComponent,
     NewsletterComponent,
     FooterComponent,
-    CopyrightComponent
+    CopyrightComponent,
+    ProductComponent,
+    ProductItemComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
-    FormsModule
+    FormsModule, 
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

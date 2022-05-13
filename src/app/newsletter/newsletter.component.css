@@ -1,3 +1,7 @@
 .newsletter_button:disabled {
     background-color: gray;
 }
+
+.emailSend {
+    color: green;
+}
